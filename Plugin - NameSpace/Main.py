@@ -11,6 +11,10 @@ class ExtensionClass:
         except:
             raise KeyError(f"There aren't any extension modules with Key: {key}")
 
-Object = ExtensionClass([".\path1\src\\",".\path2\src\\"])
-Object.invoke_method("One")
-Object.invoke_method("Two")
+def main():
+    Object = ExtensionClass([".\path1\src\\",".\path2\src\\"])
+    Object.invoke_method("One")
+    Object.invoke_method("Two") 
+            
+if __name__ == "__main__":
+    main()
