@@ -1,0 +1,1 @@
+from blocks.block_a.block_a import BlockA # noqa
